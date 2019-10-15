@@ -19,10 +19,17 @@ console.log('Soon, you will look back on your current confusion towards frontend
 const cookies = ["Oatmeal Raisin", "Chocolate Chip", "Sugar", "Peanut Butter", "Snickerdoodle", "Ginger"]
 
 
+
+for (let i = 0; i < cookies.length; i++) {
+    const currentCookie = cookies[i]
+    console.log(`Mmmmmmm... that's a good ${currentCookie} cookie`)
+}
+
     for (let i = 0; i < cookies.length; i++) {
         const currentCookie = cookies[i]
         console.log(`Mmmmmmm... that's a good ${currentCookie} cookie`)
     }
+
 
 
 
@@ -35,7 +42,17 @@ const cookies = ["Oatmeal Raisin", "Chocolate Chip", "Sugar", "Peanut Butter", "
 // conjunction("Master", "Card")
 // console.log(conjoinedWord)
 
+let conjoinedWord = ""
+// declared empty variable in order to access it outside the function
 
+const conjunction = function (firstWord, secondWord) {
+    conjoinedWord = `${firstWord} ${secondWord}`
+}
+// I declared the function name, gave it paramenters, and then told it what I want it to 
+
+conjunction("Master", "Card")
+console.log(conjoinedWord)
+// I called the function, passed in arguments, and then told it to console log the result
 
 // // Mod Squad
 
