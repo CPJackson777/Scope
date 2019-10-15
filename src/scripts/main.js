@@ -1,0 +1,1 @@
+console.log('Soon, you will look back on your current confusion towards frontend developement and realize how far you have come in your understanding of coding because it will be easy to you.')
