@@ -124,3 +124,24 @@ document.querySelector(".show-info").innerHTML = HTMLRepresentation
 //     need to fix this somehow.
 // */
 // console.log(`There were ${k} invalid locations`)
+
+
+// Corrected Code...
+const locations = [[1, 1], [1, 2], [1, 3], [2, 1], [2, 2], [2, 3]]
+
+let theseAreInvalid = 0
+// Created var to equal a number
+
+for (let k = 0; k < locations.length; k++) {
+    const currentLocation = locations[k]
+
+if (currentLocation[0] > 2) {
+    const invalidLocation = true;
+    theseAreInvalid += 1;
+} else {
+    console.log("This location is valid")
+}
+}
+// Added my created var to include a += 1 in order to count how many times we got an invalid location. Also, added an else statement to tell computer what to console log if [0] is not greater than 2.
+
+console.log(`There were ${theseAreInvalid} invalid locations`)
