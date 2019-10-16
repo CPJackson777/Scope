@@ -25,12 +25,6 @@ for (let i = 0; i < cookies.length; i++) {
     console.log(`Mmmmmmm... that's a good ${currentCookie} cookie`)
 }
 
-    for (let i = 0; i < cookies.length; i++) {
-        const currentCookie = cookies[i]
-        console.log(`Mmmmmmm... that's a good ${currentCookie} cookie`)
-    }
-
-
 
 
 // // Conjunction Function
@@ -54,6 +48,16 @@ conjunction("Master", "Card")
 console.log(conjoinedWord)
 // I called the function, passed in arguments, and then told it to console log the result
 
+
+// Alternate / easier solution...
+// const conjunction = function (firstWord, secondWord) {
+//     const conjoinedWord = `${firstWord} ${secondWord}`
+//     console.log(conjoinedWord)
+// }
+
+// conjunction("Master", "Card")
+
+
 // // Mod Squad
 
 // {
@@ -74,6 +78,26 @@ console.log(conjoinedWord)
 
 // document.querySelector(".show-info").innerHTML = HTMLRepresentation
 
+
+// Corrected Code...
+
+const ModSquad = {
+    members: ["Pete Cochran", "Linc Hayes", "Julie Barnes", "Capt. Adam Greer", "Chief Barney Metcalf"],
+    series: {
+        start: "1968",
+        end: "1973"
+    }
+}
+// Took quotations off of the object key because it's not a string. Also, added a comma at the end of the array to separate the keys.
+
+let HTMLRepresentation = `<h1>The Mod Squad</h1>`
+for (let i = 0; i < ModSquad.members.length; i++) {
+    HTMLRepresentation += `<div>${ModSquad.members[i]}</div>`
+}
+// Changed const to let before HTMLRepresentation so that I could add the array list after/below it with each array index being on a separate line once the created for loop is activated. 
+
+document.querySelector(".show-info").innerHTML = HTMLRepresentation
+// Had to remove the outside curly braces to give HTMLRepresentation access to its definition.
 
 
 // // Simon Says
